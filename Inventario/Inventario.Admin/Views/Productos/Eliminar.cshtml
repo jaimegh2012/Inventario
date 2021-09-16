@@ -1,0 +1,104 @@
+﻿@model Inventario.BL.Producto
+
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h2>Eliminar</h2>
+
+<h3>Estas seguro que quieres eliminar este producto?</h3>
+<div>
+    <h4>Producto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdMarca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdMarca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdPresentacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdPresentacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdProveedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdProveedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdZona)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdZona)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionProducto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionProducto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Stock)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Stock)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IVA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IVA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar", "Index")
+        </div>
+    }
+</div>
